@@ -1,35 +1,29 @@
+/*
+ * Cube class by Joshua Yuan.
+ */
+public class Cube extends RectangularPrism implements Shape{
 
-public class Cube implements Shape{
-
-	private double edge;
+	private double sideLength;
 	
-	public Cube(double edge) {
-		this.edge = edge;
+	public Cube(){
+		super();
 	}
-
-	/*
-	 * Getter method for parameter edge.
-	 */
-	public double getEdge() {
-		return edge;
+	
+	public Cube(double len){
+		super(len, len, len);
 	}
-
-	/*
-	 * Setter method for parameter edge.
-	 */
-	public void setEdge(double edge) {
-		this.edge = edge;
+	
+	public double getSize() {
+		return getLength();
 	}
-
+	
+	@Override
+	public double getSurfaceArea(){
+		return 6 * sideLength * sideLength;
+		}
 
 	@Override
-	public double getVolume() {
-		return Math.pow(edge, 3);
-	}
-
-	@Override
-	public double getSurfaceArea() {
-		return 6 * Math.pow(edge, 2);
-	}
-
+	public double getVolume(){
+		return sideLength * sideLength * sideLength;
+		}
 }
