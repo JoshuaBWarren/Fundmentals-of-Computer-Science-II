@@ -10,7 +10,18 @@ public class RectangularPrism extends abstractShape implements Shape{
 	public RectangularPrism(double width, double length, double height) {
 		super(length, width, height);
 	}
-
+	
+	public double getBaseArea() {
+		return getLength() * getWidth();
+	}
+	
+	public double getFrontArea() {
+		return getLength() * getHeight();
+	}
+	
+	public double getSideArea() {
+		return getWidth() * getHeight();
+	}
 
 	@Override
 	public double getVolume() {
