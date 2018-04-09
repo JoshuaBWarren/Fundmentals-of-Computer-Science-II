@@ -10,8 +10,8 @@ public class Cone extends Cylinder implements Shape{
 		super();
 	}
 	
-	public Cone(double radius, double length, double height) {
-		super(radius, 0, height);
+	public Cone(double radius, double height) {
+		super(radius, height);
 	}
 	
 	public double getRadius() {
