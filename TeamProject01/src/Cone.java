@@ -2,32 +2,32 @@
  * Cone class created by Karen Velderrain-Lopez
  */
 public class Cone extends Cylinder implements Shape{
-	
-	private double radius;
-	private double height;
-	
+
+	// Constructor for Cylinder using the super class.
 	public Cone() {
 		super();
 	}
 	
+	// Constructor for class Cone.
 	public Cone(double radius, double height) {
 		super(radius, height);
 	}
-	
-	public double getRadius() {
-		return getRadius();
+
+	// This method grabs the value for the side area.
+	public double getSideArea() {
+		return Math.PI * getRadius() * Math.hypot(getRadius(), getHeight());
 	}
 	
-	public double getHeight() {
-		return getHeight();
+	// Formula for the volume of a Cylinder is 
+	public double getVolume() {
+		return super.getVolume() / 3;		
 	}
-	
-    public double getVolume(){
-        return Math.PI * radius * radius * (height/3);
-    }
     
-    public double getSurfaceArea(){
-        return Math.PI * radius * (radius + Math.sqrt(height * height + radius * radius));
-    }
+	// Formula for the surface area of a Cylinder is A=πr(r+sqrth2+r2)
+	// Mathetmatical pie times the radius times the square root of
+	// height squared plus radius squared.
+	public double getSurfaceArea() {
+		return getBaseArea() + getSideArea();
+	}
 
 }

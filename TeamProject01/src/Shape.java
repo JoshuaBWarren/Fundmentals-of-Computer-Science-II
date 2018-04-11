@@ -1,4 +1,6 @@
-
+/*
+ * This is the Interface class called Shape.  
+ */
 public interface Shape {
 
 	

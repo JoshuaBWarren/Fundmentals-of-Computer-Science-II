@@ -3,36 +3,43 @@
  */
 public class Cylinder extends RectangularPrism implements Shape {
 	
-	private double height;
-	private double radius;
-    
-    public Cylinder(double height, double radius){
-        this.height = height;
-        this.radius = radius;
-    }
-    public Cylinder() {
+	// Constructor for Cylinder using the super class.
+	public Cylinder() {
 		super();
 	}
-	public double getLength(){
-        return radius*2;
+    
+	// Constructor for class Cylinder.
+    public Cylinder(double height, double radius){
+        super(2 * radius, 2 * radius, height);
     }
-    public double getWidth(){
-        return radius*2;
+
+    // The formula will need a radius, we we take the length
+    // and divide it by two.
+	public double getRadius(){
+        return getLength() / 2;
     }
-    public double getRadius(){
-        return radius;
-    }
+	
+	// This method gets the value of the base area.
+	public double getBaseArea() {
+		return Math.PI * Math.pow(getRadius(), 2);
+	}
+
+	// This method gets the value for the side area.
+    public double getSideArea() {
+		return 2 * Math.PI * getRadius() * getHeight();
+	}
+    
+    // Formula for volume of a Cylinder is V = πr2h.
+    // Mathetmatical pie times the radius, squared, and times the height.
     public double getVolume(){
-        return getBase()*height;
+        return getBaseArea() * getHeight();
     }
-    public double getBase(){
-        return Math.PI*radius*radius;
-    }
-    public double getSideArea(){
-        return 2*Math.PI*radius*height;
-    }
-    public double getSufaceArea(){
-        return getSideArea()+2*getBase();
-    }
+    
+    // Formula for the surface area of a Cylinder is A=2πrh+2πr2.
+    // 2 times mathematical pie times radius and height plus
+    // 2 times mathematical pie times radius, squared.
+    public double getSurfaceArea() {
+		return 2 * getBaseArea() + getSideArea();
+	}
 
 }

@@ -2,8 +2,6 @@
  * Cube class by Joshua Yuan.
  */
 public class Cube extends RectangularPrism implements Shape{
-
-	private double sideLength;
 	
 	public Cube(){
 		super();
@@ -19,11 +17,11 @@ public class Cube extends RectangularPrism implements Shape{
 	
 	@Override
 	public double getSurfaceArea(){
-		return 6 * sideLength * sideLength;
+		return super.getSurfaceArea();
 		}
 
 	@Override
 	public double getVolume(){
-		return sideLength * sideLength * sideLength;
+		return super.getVolume();
 		}
 }
