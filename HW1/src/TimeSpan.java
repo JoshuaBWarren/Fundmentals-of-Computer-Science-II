@@ -21,5 +21,14 @@ public class TimeSpan {
 	public String toString() {
 		return (totalMinutes / 60) + "h" + (totalMinutes % 60) + "m";
 	}
+	
+	// HW1: problem 12
+	// Equals method for TimeSpan input.  
+	// a TimeSpan is equal only when the hours and minutes 
+	// are the same.
+	public boolean equals(TimeSpan input) {
+	
+		return input.totalMinutes == this.totalMinutes;
+	}
 
 }

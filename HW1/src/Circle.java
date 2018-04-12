@@ -18,4 +18,12 @@ public class Circle implements Shape {
 	public double getPerimeter() {
 		return 2.0 * Math.PI * radius;
 		}
+	
+	public boolean equals(Object o) {
+		if(o instanceof Circle) {
+			Circle other = (Circle) o;
+			return other.radius == this.radius;
+		}
+		return false;
+	}
 }

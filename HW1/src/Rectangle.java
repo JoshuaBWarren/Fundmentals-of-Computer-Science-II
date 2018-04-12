@@ -20,4 +20,12 @@ public class Rectangle implements Shape {
 	public double getPerimeter() {
 		return 2.0 * (width + height);
 		}
+	
+	public boolean equals(Object o) {
+		if(o instanceof Rectangle) {
+			Rectangle other = (Rectangle) o;
+			return other.height == this.height && other.width == this.width;
+		}
+		return false;
+	}
 }

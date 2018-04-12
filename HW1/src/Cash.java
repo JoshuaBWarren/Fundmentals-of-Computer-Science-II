@@ -44,4 +44,13 @@ public class Cash implements Asset {
 	public String toString(){
 		return "Cash $" + this.amount;
 		}
+	
+	// HW1: problem two
+	// Equals method for Cash input.
+	// A Cash object is equal only when the amount of money
+	// is the same.
+	public boolean equals(Cash input) {
+		
+		return input.amount == this.amount;
+	}
 }
