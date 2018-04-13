@@ -1,0 +1,11 @@
+Project One completed, as follows:
+
+Team Leader:     Joshua Warren
+
+Karen Velderrain-Lopez:  Cone class
+Joshua Yuan:             Cube class
+Andrew Franko:           Cylinder class
+Joshua Warren:           RectangularPrism class
+Hadassah Latchague:      Spehere class
+Ho Young Lim:            TriangularPrism class
+

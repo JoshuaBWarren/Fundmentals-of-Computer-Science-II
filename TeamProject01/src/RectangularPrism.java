@@ -2,7 +2,7 @@
  * Rectangular Prism class created by Joshua Warren.
  * 
  */
-public class RectangularPrism extends abstractShape implements Shape{
+public class RectangularPrism extends AbstractShape implements Shape{
 	
 	// Constructor for RectangularPrism using the super class.
 	public RectangularPrism() {

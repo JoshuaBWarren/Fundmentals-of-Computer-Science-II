@@ -24,7 +24,7 @@ public class Cone extends Cylinder implements Shape{
 	}
     
 	// Formula for the surface area of a Cylinder is A=πr(r+sqrth2+r2)
-	// Mathetmatical pie times the radius times the square root of
+	// Mathematical pie times the radius times the square root of
 	// height squared plus radius squared.
 	public double getSurfaceArea() {
 		return getBaseArea() + getSideArea();

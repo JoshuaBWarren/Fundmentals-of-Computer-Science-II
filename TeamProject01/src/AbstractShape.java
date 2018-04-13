@@ -1,5 +1,5 @@
 // This class was made via a joint effort by Team Batman.  All individual members are responsible.
-public class abstractShape {
+public class AbstractShape {
 	
 	// An abstractShape, or a 3D shape, will have a length, width, and height.
 	private double length;
@@ -7,10 +7,10 @@ public class abstractShape {
 	private double height;
 	
 	// Empty constructor for class abstractShape.
-	public abstractShape() {}
+	public AbstractShape() {}
 	
 	// Constructor for class abstractShape.
-	public abstractShape(double length, double width, double height) {
+	public AbstractShape(double length, double width, double height) {
 		this.length = length;
 		this.width = width;
 		this.height = height;

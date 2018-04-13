@@ -30,7 +30,7 @@ public class Cylinder extends RectangularPrism implements Shape {
 	}
     
     // Formula for volume of a Cylinder is V = πr2h.
-    // Mathetmatical pie times the radius, squared, and times the height.
+    // Mathematical pie times the radius, squared, and times the height.
     public double getVolume(){
         return getBaseArea() * getHeight();
     }
