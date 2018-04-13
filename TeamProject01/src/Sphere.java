@@ -1,4 +1,11 @@
 /*
+ * Team Batman
+ * CS211
+ * 4/12/2018
+ * Team Project One
+ */
+
+/*
  * Sphere class created by Hadassah Latchague
  */
 public class Sphere extends Cube implements Shape {

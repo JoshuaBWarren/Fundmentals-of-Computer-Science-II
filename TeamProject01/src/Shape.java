@@ -2,8 +2,8 @@
  * Team Batman
  * CS211
  * 4/12/2018
- * First team project
- * 
+ * Team Project One
+ *
  * 
  * This is the Interface class called Shape.  
  */

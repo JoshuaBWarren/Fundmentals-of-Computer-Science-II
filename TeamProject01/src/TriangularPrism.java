@@ -1,4 +1,11 @@
 /*
+ * Team Batman
+ * CS211
+ * 4/12/2018
+ * Team Project One
+ */
+
+/*
  * TriangularPrism class created by Ho Young Lim
  */
 public class TriangularPrism extends RectangularPrism implements Shape {

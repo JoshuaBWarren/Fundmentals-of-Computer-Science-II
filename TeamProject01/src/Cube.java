@@ -1,4 +1,11 @@
 /*
+ * Team Batman
+ * CS211
+ * 4/12/2018
+ * Team Project One
+ */
+
+/*
  * Cube class by Joshua Yuan.
  */
 public class Cube extends RectangularPrism implements Shape{

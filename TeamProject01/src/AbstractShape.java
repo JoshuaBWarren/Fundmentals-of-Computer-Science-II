@@ -1,3 +1,10 @@
+/*
+ * Team Batman
+ * CS211
+ * 4/12/2018
+ * Team Project One
+ */
+
 // This class was made via a joint effort by Team Batman.  All individual members are responsible.
 public class AbstractShape {
 	
