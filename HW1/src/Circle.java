@@ -1,3 +1,10 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents circle shapes.
 public class Circle implements Shape {
 	private double radius;
@@ -19,6 +26,10 @@ public class Circle implements Shape {
 		return 2.0 * Math.PI * radius;
 		}
 	
+	// HW1: problem 14
+	// Equals method for class Circle.  
+	// Two shapes are considered equal if the 
+	// fields are the same.
 	public boolean equals(Object o) {
 		if(o instanceof Circle) {
 			Circle other = (Circle) o;

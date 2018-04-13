@@ -1,3 +1,10 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents a time span of hours and minutes elapsed.
 // Alternate implementation using only total minutes.
 public class TimeSpan {

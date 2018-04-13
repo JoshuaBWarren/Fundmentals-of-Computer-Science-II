@@ -1,3 +1,10 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents an amount of money held by an investor.
 public class Cash implements Asset {
 	
@@ -45,7 +52,7 @@ public class Cash implements Asset {
 		return "Cash $" + this.amount;
 		}
 	
-	// HW1: problem two
+	// HW1: problem 13
 	// Equals method for Cash input.
 	// A Cash object is equal only when the amount of money
 	// is the same.

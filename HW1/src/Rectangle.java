@@ -1,3 +1,10 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents rectangle shapes.
 public class Rectangle implements Shape {
 	
@@ -21,6 +28,10 @@ public class Rectangle implements Shape {
 		return 2.0 * (width + height);
 		}
 	
+	// HW1: problem 14
+	// Equals method for class Rectangle.  
+	// Two shapes are considered equal if the 
+	// fields are the same.
 	public boolean equals(Object o) {
 		if(o instanceof Rectangle) {
 			Rectangle other = (Rectangle) o;

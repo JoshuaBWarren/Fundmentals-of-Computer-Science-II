@@ -1,3 +1,9 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
 
 public class Client {
 	
@@ -38,15 +44,15 @@ public class Client {
 		//System.out.println(t1.equals(t2));
 		//System.out.println(t1.equals(t3));
 		
-		Octogon o1 = new Octogon(5);
+		Octagon o1 = new Octagon(5);
 		
 		//System.out.println(o1.getArea());
 		//System.out.println(o1.getPerimeter());
 		
 		Hexagon h1 = new Hexagon(5);
 		
-		System.out.println(h1.getPerimeter());
-		System.out.println(h1.getArea());
+		//System.out.println(h1.getPerimeter());
+		//System.out.println(h1.getArea());
 	}
 
 }

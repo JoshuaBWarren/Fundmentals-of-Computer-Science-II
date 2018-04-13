@@ -1,8 +1,19 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents Hexagon shapes.
 public class Hexagon implements Shape{
 
 	private int side;
 	
+	// Empty constructor for class Hexagon
+	public Hexagon() {}
+	
+	// Constructor for class Hexagon
 	public Hexagon(int side) {
 		this.side = side;
 	}

@@ -1,3 +1,10 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents financial assets that investors hold.
 public interface Asset {
 	

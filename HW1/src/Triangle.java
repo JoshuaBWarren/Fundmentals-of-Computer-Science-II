@@ -1,3 +1,10 @@
+/*
+ * Joshua Warren
+ * CS211
+ * 4/12/2018
+ * HW1 Assignment
+ */
+
 // Represents triangle shapes.
 public class Triangle implements Shape {
 	
@@ -24,10 +31,13 @@ public class Triangle implements Shape {
 		return a + b + c;
 		}
 	
-	
+	// HW1: problem 14
+	// Equals method for class Triangle.  
+	// Two shapes are considered equal if the 
+	// fields are the same.
 	public boolean equals(Object o) {
 		if(o instanceof Triangle) {
-			Triangle other =(Triangle) o;
+			Triangle other = (Triangle) o;
 			return other.a == this.a && other.b == this.b && other.c == this.c;
 		}
 		return false;
