@@ -29,12 +29,12 @@ public class Hexagon implements Shape{
 	}
 
 
-	// This method will get the area of a hexagon.
+	// Returns the area of a hexagon.
 	public double getArea() {
 		return (3 * Math.sqrt(3) / 2) * Math.pow(side, 2);
 	}
 
-	// This method will get the perimeter of a hexagon.
+	// Returns the perimeter of a hexagon.
 	public double getPerimeter() {
 		return 6 * side;
 	}
