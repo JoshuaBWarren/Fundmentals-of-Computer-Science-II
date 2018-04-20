@@ -82,8 +82,8 @@ public int compareTo(Point o) {
 		return this.x - o.getX();
 	} else {
 		
-		// if the input and Point being check is not equal
-		// then compare their  y-coordinates
+		// else the input and Point being check is not
+		// equal so compare their y-coordinates
 		return this.y - value;
 		}
 	}

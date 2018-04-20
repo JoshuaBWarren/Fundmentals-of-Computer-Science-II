@@ -1,3 +1,11 @@
+/*
+ * Joshua Warren
+ * 4/19/2018
+ * CS211
+ * In class assignment 01
+ * due 4/20/2018
+ */
+
 // Uses maps to implement a word count, so that the user
 // can see which words occur the most in the book Moby Dick.
 
@@ -14,17 +22,21 @@ public class WordCount {
 		System.out.println("frequently occurring words from");
 		System.out.println("the book Moby Dick.");
 		System.out.println();
-	
-		// read the book into a map
+		
+		// read the user's input word and then
+		// assign a variable to store the count
 		Scanner input = new Scanner(System.in);
 		String wordToCheck = input.next().toLowerCase();
 		int wordToCheckCount = 0;
-		
+	
+		// read the book into a map
 		Scanner in = new Scanner(new File("mobydick.txt"));
 		Map<String, Integer> wordCountMap = getCountMap(in);
 		for (String word : wordCountMap.keySet()) {
 			int count = wordCountMap.get(word);
+			// check for the word key already being counted by the program.
 			if(wordCountMap.containsKey(wordToCheck)) {
+				// if the key exists, make it's count equal to the variable
 				wordToCheckCount = wordCountMap.get(wordToCheck);
 			}
 			if (count > OCCURRENCES) {
@@ -32,6 +44,7 @@ public class WordCount {
 				}
 			}
 		System.out.println();
+		// print out the total count of the user's input word.
 		System.out.println("User input string: " + wordToCheck + ", " + "appears " + wordToCheckCount);
 		}
 	

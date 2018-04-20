@@ -118,7 +118,7 @@ public class Client {
 		}
 		
 		// return the total count divided by the total number
-		// of strings within the array.
+		// of strings within the array (the average).
 		return count / input.size();
 	}
 	
@@ -126,8 +126,8 @@ public class Client {
 	 * Problem 3: Write a method called removeEvenLength that takes an ArrayList of
 	 * of strings as a paramter and removes all the strings with an even length.
 	 * 
-	 * Batman = 6 characters (even)
-	 * Robin = 5 characters (odd)
+	 * Batman = 6 characters (even) is removed.
+	 * Robin = 5 characters (odd) is not removed.
 	 */
 	public static void removeEvenLength(ArrayList<String> input) {
 		
