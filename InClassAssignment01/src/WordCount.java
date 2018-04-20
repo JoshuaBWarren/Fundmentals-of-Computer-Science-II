@@ -15,7 +15,7 @@ import java.util.*;
 public class WordCount {
 	
 	// minimum number of occurrences needed to be printed
-	public static final int OCCURRENCES = 50;
+	public static final int OCCURRENCES = 2000;
 	
 	public static void main(String[] args)throws FileNotFoundException {
 		System.out.println("This program displays the most");
@@ -45,7 +45,7 @@ public class WordCount {
 			}
 		System.out.println();
 		// print out the total count of the user's input word.
-		System.out.println("User input string: " + wordToCheck + ", " + "appears " + wordToCheckCount);
+		System.out.println("User input string: " + wordToCheck + ", " + "appears " + wordToCheckCount + " times.");
 		}
 	
 	// Reads book text and returns a map from words to counts
