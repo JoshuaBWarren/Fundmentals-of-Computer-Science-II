@@ -83,7 +83,7 @@ public class HW3Ex13 {
 			set.add(value);
 		}
 		
-		// if the if-statement never proc's then there are no uniques; return true
+		// if the if-statement never proc's then there are no duplicates; return true
 		return true;
 	}
 
