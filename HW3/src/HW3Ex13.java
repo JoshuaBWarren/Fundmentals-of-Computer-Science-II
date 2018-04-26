@@ -48,8 +48,8 @@ public class HW3Ex13 {
 		test2.put("Robin", "Dick Grayson");
 		
 		
-		System.out.println("isUnique test: " + isUnique(test1)); // should be true
-		System.out.println("isUnique test: " + isUnique(test2)); // should be false
+		//System.out.println("isUnique test: " + isUnique(test1)); // should be true
+		//System.out.println("isUnique test: " + isUnique(test2)); // should be false
 	}
 	
 	/*

@@ -56,8 +56,8 @@ public class HW3Ex04 {
 		test2.add(-1);
 		test2.add(9);
 		
-		System.out.println("partition test: " + partition(test1, 22)); // returns a partitioned list
-		System.out.println("partition test: " + partition(test2, 5)); // returns a partitioned list
+		//System.out.println("partition test: " + partition(test1, 22)); // returns a partitioned list
+		//System.out.println("partition test: " + partition(test2, 5)); // returns a partitioned list
 	}
 	
 	/*

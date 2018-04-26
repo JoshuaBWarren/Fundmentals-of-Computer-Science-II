@@ -61,8 +61,8 @@ public class HW3Ex02 {
 		test3.add(10);
 		test3.add(11);
 		
-		System.out.println("alternate test 1: " + alternate(test1, test2)); //  return [1, 2, 3, 4, 5, 6]
-		System.out.println("alternate test 2: " + alternate(test1, test3)); // return [1, 7, 3, 8, 5, 9, 10, 11]
+		//System.out.println("alternate test 1: " + alternate(test1, test2)); //  return [1, 2, 3, 4, 5, 6]
+		//System.out.println("alternate test 2: " + alternate(test1, test3)); // return [1, 7, 3, 8, 5, 9, 10, 11]
 		
 	}
 	

@@ -46,8 +46,8 @@ public class HW3Ex06 {
 		test1.add(15);
 		test1.add(15);
 		
-		System.out.println("countUnique empty test: " + countUnique(test0)); // should return 0;
-		System.out.println("countUnique test: " + countUnique(test1)); // should return 5
+		//System.out.println("countUnique empty test: " + countUnique(test0)); // should return 0;
+		//System.out.println("countUnique test: " + countUnique(test1)); // should return 5
 	}
 	
 	/*

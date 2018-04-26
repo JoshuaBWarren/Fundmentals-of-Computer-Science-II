@@ -47,9 +47,9 @@ public class HW3Ex08 {
 		test2.add("Why is Batman so awesome?");
 		test2.add("Just because.");
 		
-		System.out.println("maxLength empty test: " + maxLength(test0)); // should return 0
-		System.out.println("maxLength test: " + maxLength(test1)); // should return 51;
-		System.out.println("maxLength test: " + maxLength(test2)); // should return 25;
+		//System.out.println("maxLength empty test: " + maxLength(test0)); // should return 0
+		//System.out.println("maxLength test: " + maxLength(test1)); // should return 51;
+		//System.out.println("maxLength test: " + maxLength(test2)); // should return 25;
 		
 		
 	}
