@@ -48,8 +48,8 @@ public class HW3Ex13 {
 		test2.put("Robin", "Dick Grayson");
 		
 		
-		System.out.println("isUnique test: " + isUnique(test1)); // should be false
-		System.out.println("isUnique test: " + isUnique(test2)); // should be true
+		System.out.println("isUnique test: " + isUnique(test1)); // should be true
+		System.out.println("isUnique test: " + isUnique(test2)); // should be false
 	}
 	
 	/*
@@ -60,24 +60,30 @@ public class HW3Ex13 {
 	public static boolean isUnique(Map<String, String> input) {
 		
 		// create a set to check for duplicates
-		Set<String> temp = new HashSet<String>();
+		Set<String> set = new HashSet<String>();
 		
-		// go through the input map
-		for(String key : input.keySet()) {
-			String value = input.get(key);
+		// create a list that holds all of the values within the map
+		List<String> list = new LinkedList<String>();
+		list.addAll(input.values());
+		
+		// loop through the list of values
+		for(int i = 0; i <= list.size() - 1; i++) {
 			
-			// if the set contains the value
-			if(temp.contains(value)) {
+			// assign a variable to the first value within the list
+			String value = list.get(i);
+			
+			// if our set contains the value
+			if(set.contains(value)) {
 				
-				// we have a duplicate value; return false
+				// we've found a duplicate: return false.
 				return false;
 			}
 			
-			// if not, add the value to the set
-			temp.add(value);
+			// else, add the value to the set and move on
+			set.add(value);
 		}
 		
-		// if the if-statement never procs, we know there are no duplicate values
+		// if the if-statement never proc's then there are no uniques; return true
 		return true;
 	}
 
