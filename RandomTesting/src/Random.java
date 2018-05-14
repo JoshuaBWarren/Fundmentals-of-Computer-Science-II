@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Random {
 	
@@ -11,21 +13,36 @@ public class Random {
 		
 		//System.out.println(test.toString());
 		System.out.println(longestConsec(test, 2));
+		System.out.println(squareDigits(9119));
 		
 	}
 
 	public static int squareDigits(int n) {
 		
-		
-		
-		String number = Integer.toString(n);
-		//String[] storage = new String[];
-		number.split("");
-		
-		for(int i = 0; i < number.length(); i++) {
-			int temp = Integer.parseInt(number[i]);
-		}
-	  }
+	    // set a return empty string
+			String answer = "";
+	    
+	    // turn our input into a string
+			String initital = Integer.toString(n);
+	    
+	    // turn the string into a String array
+			String[] array = initital.split("(?!^)");
+	    
+	    // create an Integer array
+			int[] result = new int[array.length];
+			
+	    // loop through the string array
+			for(int i = 0; i < array.length; i++) {
+	      // replace result[i] with array[i]
+				result[i] = Integer.parseInt(array[i]);
+	      // create temp variable to square that value
+				int temp = (int) Math.pow(result[i], 2);
+	      // add that value into our empty string variable
+				answer = answer + temp;
+			}
+	    // return the string answer as an int
+			return Integer.parseInt(answer);
+		  }
 	
 	public static String longestConsec(String[] strarr, int k) {
         
