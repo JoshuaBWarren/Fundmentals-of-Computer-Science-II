@@ -1,3 +1,4 @@
+import java.util.NoSuchElementException;
 
 // Class LinkedIntList can be used to store a list of integers.
 public class LinkedIntList implements IntList {
@@ -110,6 +111,11 @@ public class LinkedIntList implements IntList {
 	 */
 	
 	public int min() {
+		
+		// throw exception if the list we're given is empty.
+		if(this.size() == 0) {
+			throw new NoSuchElementException();
+		}
 		
 		// set minValue to the first item on the list
 		int minValue = this.get(0);
