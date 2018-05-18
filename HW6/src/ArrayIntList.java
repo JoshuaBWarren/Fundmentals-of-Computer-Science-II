@@ -336,6 +336,11 @@ public class ArrayIntList {
 		
 		// Not sure if it was supposed to be this easy
 		
+		// if the list is empty through exception
+		if(this.isEmpty()) {
+			throw new NoSuchElementException();
+		}
+		
 		// get the last value within the list and assign it to a variable
 		int answer = this.get(size - 1);
 		
