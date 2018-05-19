@@ -135,4 +135,20 @@ public class LinkedIntList implements IntList {
 		// return minimum value
 		return minValue;
 	}
+	
+	// Exercise from class: May 18, 2018
+	
+	/*
+	 * Write a method that moves the first element of a
+	 * list to the back (end) of the list.  
+	 */
+	
+	public LinkedIntList moveToEnd() {
+		
+		int value = this.get(0);
+		this.remove(0);
+		this.add(this.size(), value);
+		
+		return this;
+	}
 }

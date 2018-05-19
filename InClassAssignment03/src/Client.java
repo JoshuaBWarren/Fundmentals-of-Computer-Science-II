@@ -15,7 +15,10 @@ public class Client {
 		test.add(22);
 		test.add(-1);
 		
-		System.out.println("min test: should return -1 = " + test.min());
+		//System.out.println("min test: should return -1 = " + test.min());
+		
+		System.out.println(test.toString());
+		System.out.println(test.moveToEnd());
 		
 		
 	}
