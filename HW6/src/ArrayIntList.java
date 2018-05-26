@@ -334,9 +334,7 @@ public class ArrayIntList {
 	
 	public int removeLast() {
 		
-		// Not sure if it was supposed to be this easy
-		
-		// if the list is empty through exception
+		// if the list is empty throw exception
 		if(this.isEmpty()) {
 			throw new NoSuchElementException();
 		}
