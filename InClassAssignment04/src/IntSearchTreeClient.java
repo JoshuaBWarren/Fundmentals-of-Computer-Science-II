@@ -27,5 +27,7 @@ public class IntSearchTreeClient {
 		} else {
 			System.out.println("The world is alright!");
 		}
+		
+		System.out.println("This is the min: " + numbers.getMin());
 	}
 }

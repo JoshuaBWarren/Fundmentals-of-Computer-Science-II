@@ -89,13 +89,27 @@ public class IntSearchTree {
 	/*
 	 * Exercise:
 	 * 
-	 * Add an instance method, getMin(), to the class that returns the minimum value in the IntSearchTree.  
+	 * Add an instance method, getMin(), to the class that 
+	 * returns the minimum value in the IntSearchTree.  
 	 * 
-	 * Have the test client print out the minimum you found as well as the tree.
+	 * Have the test client print out the minimum you found as 
+	 * well as the tree.
 	 */
 	
-	public int getMin(IntTreeNode root) {
+	public int getMin() {
+		if (overallRoot == null) {
+			throw new NoSuchElementException();
+		}
+		printSideways();
+		return getMin(overallRoot);
 		
-		for()
+	}
+
+	private int getMin(IntTreeNode root) {
+		if (root.left == null) {
+			return root.data;
+		} else {
+			return getMin(root.left);
+		}
 	}
 }
