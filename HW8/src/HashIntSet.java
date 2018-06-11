@@ -1,4 +1,9 @@
-
+/*
+ * Joshua Warren
+ * CS 211
+ * 6/10/2018
+ * Homework 8
+ */
 // Implements a set of integers using a hash table.
 // The hash table uses separate chaining to resolve collisions.
 public class HashIntSet {

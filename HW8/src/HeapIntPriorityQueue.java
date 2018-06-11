@@ -1,4 +1,9 @@
-
+/*
+ * Joshua Warren
+ * CS 211
+ * 6/10/2018
+ * Homework 8
+ */
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.NoSuchElementException;

@@ -1,4 +1,9 @@
-// This client program tests our priority queue of integers
+/*
+ * Joshua Warren
+ * CS 211
+ * 6/10/2018
+ * Homework 8
+ */// This client program tests our priority queue of integers
 // by adding and removing several elements from it.
 public class HeapMain {
 	public static void main(String[] args) {

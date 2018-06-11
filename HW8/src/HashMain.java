@@ -1,4 +1,9 @@
-
+/*
+ * Joshua Warren
+ * CS 211
+ * 6/10/2018
+ * Homework 8
+ */
 // This client program tests our hash set of integers
 // by adding and removing several elements from it.
 import java.util.Arrays;
